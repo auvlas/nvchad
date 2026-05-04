@@ -6,8 +6,14 @@
 local M = {}
 
 M.base46 = {
-	theme = "onedark",
+	theme = "tokyonight",
+    transparency = true, -- Это включит прозрачный фон
 
+    -- Настройка цветов элементов интерфейса
+    hl_override = {
+        LineNr = { fg = "#e5c07b" },        -- Цвет всех номеров строк (неактивных)
+        CursorLineNr = { fg = "#ff503b" },  -- Цвет номера строки, где сейчас курсор
+    },
 	-- hl_override = {
 	-- 	Comment = { italic = true },
 	-- 	["@comment"] = { italic = true },
