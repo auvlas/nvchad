@@ -1,5 +1,6 @@
 vim.g.base46_cache = vim.fn.stdpath "data" .. "/base46/"
 vim.g.mapleader = " "
+vim.keymap.set({ 'n', 'i', 'v' }, '<C-8>', '<BS>', { noremap = true, silent = true })
 
 vim.o.shell="/bin/zsh"
 
